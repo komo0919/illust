@@ -1,0 +1,7 @@
+[preload  storage="./data/bgimage/lounge.png"  ]
+[preload  storage="./data/fgimage/chara/2/ja4.png"  ]
+[preload  storage="./data/bgimage/C_END_mashroom_1.png"  ]
+[preload  storage="./data/fgimage/chara/2/ja3.png"  ]
+[preload  storage="./data/bgimage/C_END_mashroom_2.png"  ]
+[preload  storage="./data/bgimage/black.png"  ]
+[return]

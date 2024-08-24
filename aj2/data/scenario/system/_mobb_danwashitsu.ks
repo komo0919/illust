@@ -1,0 +1,5 @@
+[preload  storage="./data/bgimage/danwashitsu.png"  ]
+[preload  storage="./data/fgimage/chara/1/az2.png"  ]
+[preload  storage="./data/fgimage/chara/2/j9.png"  ]
+[preload  storage="./data/bgimage/black.png"  ]
+[return]

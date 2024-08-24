@@ -1,0 +1,8 @@
+[preload  storage="./data/bgimage/bar00.jpg"  ]
+[preload  storage="./data/fgimage/chara/1/az1.png"  ]
+[preload  storage="./data/fgimage/chara/2/ja3.png"  ]
+[preload  storage="./data/fgimage/chara/2/ja2.png"  ]
+[preload  storage="./data/fgimage/chara/1/az2.png"  ]
+[preload  storage="./data/bgimage/black.png"  ]
+[preload  storage="./data/bgimage/A_END_teatime.png"  ]
+[return]

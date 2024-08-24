@@ -1,0 +1,68 @@
+<div class="load">
+	<img class="img_bg_base" src="" data-type="load" />
+	<div class="menu_item menu_close">
+		<img class="menu_close_image" src="" />
+	</div>
+	
+
+	<div class="area_page_list">
+		{{for array_page}}
+			<img class="page" src="" data-page="{{:num}}" />
+		{{/for}}
+	</div>
+
+	<div class="area_save_list">
+	
+		<ul class="save_list">
+			{{for array_save}}
+				<li class="save_display_area save_list_item" data-num="{{:num}}" data-page="{{:page}}" data-umu="{{:save_date}}">
+					<img class="save_list_item_bg" src=""  data-num="{{:num}}" />
+					<img class="save_list_item_new" src=""  data-num="{{:num}}" />
+					<span class="save_list_item_num"  data-num="{{:num}}">
+						{{:num+1}}
+					</span>
+					<span class="save_list_item_thumb">
+					{{if img_data != ""}}
+						<img src="{{:img_data}}"  data-thumb="true">
+					{{else}}
+						<img src="" data-thumb="false">
+					{{/if}}
+					</span>
+					
+					<span class="save_list_item_area">
+						<span class="save_list_item_date">{{:save_date}}　</span>
+						{{if save_date != ""}}
+							{{if lock == true}}
+								<img class="save_list_item_lock" src="" data-num="{{:num}}" data-lock="true" />
+								<img class="save_list_item_delete" src="" data-num="{{:num}}" data-delete="false" />
+							{{else}}
+								<img class="save_list_item_lock" src="" data-num="{{:num}}" data-lock="false" />
+								<img class="save_list_item_delete" src=""  data-num="{{:num}}"  data-delete="true"/>
+							{{/if}}
+						{{/if}}
+						<span class="save_list_item_data">{{:data_text}}　</span>
+						<span class="save_list_item_text">{{:title}}</span>
+						{{if save_date != ""}}
+							<input class="save_list_item_comment" type="text" placeholder="コメント" data-num="{{:num}}" value="{{:comment}}"></input>
+							<img class="save_list_item_submit" src="" data-num="{{:num}}" />
+						{{/if}}
+					</span>
+					<div class="save_list_layermode"></div>
+				</li>
+			{{/for}}
+		</ul>
+	
+	</div>
+	
+	<div class="menu_mask"></div>
+
+
+<script class="menu_close">
+	$(".area_save_list").on("touchstart", function(e) {
+	})
+	$(".area_save_list").on("touchmove", function(e){
+		e.stopPropagation()
+	});
+</script>
+
+</div>
